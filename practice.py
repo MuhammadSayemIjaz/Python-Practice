@@ -1,31 +1,32 @@
 # print(25//5)
 from ast import While
+from dataclasses import dataclass
 from math import radians
 from pickle import DICT
 import readline
 from traceback import print_tb
 from typing import Dict
+# import pandas as pd
 
-
-tuple_1 = (1,(3,5,6.7),78,0,(23,56),2)
+# tuple_1 = (1,(3,5,6.7),78,0,(23,56),2)
 # print(tuple_1[1][1])
 # print(tuple_1[0])
-A = [1,3,4,5,7]
-A.append(["a", "b"])
+# A = [1,3,4,5,7]
+# A.append(["a", "b"])
 # print(A[5][1])
 # help(A)
 # B = A[:]
-B = A
-B[2] = "Muhammad Sayem Ijaz"
+# B = A
+# B[2] = "Muhammad Sayem Ijaz"
 # print(A[2])
-Sp = B[2].split("1")
+# Sp = B[2].split("1")
 # print(Sp)
-set_A = {"Muhammad", "Sayem", "Ijaz", 190, 1890 , 22}
-set_B = {"Muhammad", "Sayem", "Ijaz"}
+# set_A = {"Muhammad", "Sayem", "Ijaz", 190, 1890 , 22}
+# set_B = {"Muhammad", "Sayem", "Ijaz"}
 # print(set_B.issubset(set_A))
-DICT = {"Name" : 'Muhammad Sayem Ijaz', "Roll_No" : "bsf1901890" , "Class" : "BSIT", "Semester" : 6}
+# DICT = {"Name" : 'Muhammad Sayem Ijaz', "Roll_No" : "bsf1901890" , "Class" : "BSIT", "Semester" : 6}
 # print(DICT.keys(),DICT.values())
-ABC = {"Name" : "Muhammad Sayem Ijaz" , "Roll" : 12345 , "D": (4,4,4)}
+# ABC = {"Name" : "Muhammad Sayem Ijaz" , "Roll" : 12345 , "D": (4,4,4)}
 # print(ABC["D"])
 # i= 10000000
 # print(i!=0)
@@ -123,3 +124,31 @@ ABC = {"Name" : "Muhammad Sayem Ijaz" , "Roll" : 12345 , "D": (4,4,4)}
 #     # print(fileTitle)
 #     fileTitle = File1.readlines();
 #     print(fileTitle)
+
+# Write Files 
+
+# with open("Members01.txt", "w") as File1:
+#     File1.write("Usama Khizar")
+#     File1.write("Sayem IJaz")
+
+# with open("Members01.txt" , "r") as File2:
+#     print(File2.read())
+
+# with open("Members01.txt", "a") as File1:
+#     File1.write("\n Usama Khizar \n")
+#     File1.write("Sayem Ijaz")
+
+
+# with open("Members01.txt" , "r") as File2:
+#     print(File2.read())
+
+# copy files data
+
+# with open("Example01.txt", "r") as readFiles:
+#     with open("CopySample.txt" , "w") as writeFiles:
+#         for line in readFiles:
+#             writeFiles.write(line)
+
+# csv_file_path = ('/sample.csv')
+# df = pd.read_csv(csv_file_path)
+# df.head()

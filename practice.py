@@ -2,6 +2,8 @@
 from ast import While
 from math import radians
 from pickle import DICT
+import readline
+from traceback import print_tb
 from typing import Dict
 
 
@@ -63,17 +65,61 @@ ABC = {"Name" : "Muhammad Sayem Ijaz" , "Roll" : 12345 , "D": (4,4,4)}
 # print(YellowCircle.color , YellowCircle.radius)
 # print(BlueCircle.color , BlueCircle.radius)
 
-class Person():
-    def __init__(self, name, gender, cnic, contact):
-        self.name = name
-        self.gender = gender
-        self.cnic = cnic 
-        self.contact = contact
-    def walk(self):
-        print(f"{self.name} is walking")
+# class Person():
+#     def __init__(self, name, gender, cnic, contact):
+#         self.name = name
+#         self.gender = gender
+#         self.cnic = cnic 
+#         self.contact = contact
+#     def walk(self):
+#         print(f"{self.name} is walking")
 
-Person1 = Person("Muhammad Sayem Ijaz", "Male", 12345 , 452341)
-print(Person1.name)
-print(Person1.gender)
-print(Person1.cnic)
-print(Person1.contact)
+# Person1 = Person(name = "Muhammad Sayem Ijaz",gender ="Male",cnic = 12345 ,contact = 452341)
+# print(Person1.name)
+# print(Person1.gender)
+# print(Person1.cnic)
+# print(Person1.contact)
+
+# A12 = ['1','2','3']
+# for a in A12:
+#     print(2*a)
+
+# def Delta(x):
+#     if x==0:
+#         y=1
+#     else:  
+#         y=0
+    
+#     return(y)
+
+# print(Delta(1))
+
+# class Person:
+#     "This is a person class which is used for Person Information"
+#     age = 10
+
+#     def greet(self):
+#         print('Hello')
+
+
+# # Output: 10
+# print(Person.age)
+
+# # Output: <function Person.greet>
+# print(Person.greet)
+
+# # Output: "This is a person class"
+# print(Person.__doc__)
+
+# ABC = [1,3,4,5,6,7]
+
+# for i in ABC:
+#     print(ABC[i])
+
+# Read files 
+
+# with open("Example01.txt", "r") as File1:
+#     # fileTitle = File1.readlines(16);
+#     # print(fileTitle)
+#     fileTitle = File1.readlines();
+#     print(fileTitle)
